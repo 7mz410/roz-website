@@ -9,8 +9,8 @@ export default function ContactPage() {
       </p>
 
       <div className="mb-8 rounded-xl bg-white p-6 shadow-sm">
-        <a href="mailto:hamza.abu3ayash@gmail.com" className="text-lg font-semibold text-roz-teal hover:underline">
-          hamza.abu3ayash@gmail.com
+        <a href="mailto:info@el7mz.com" className="text-lg font-semibold text-roz-teal hover:underline">
+          info@el7mz.com
         </a>
       </div>
 
