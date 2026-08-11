@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const APP_URL = "https://app.roz-hr.com";
@@ -37,6 +38,19 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="mx-auto -mt-10 max-w-4xl px-5">
+        <div className="overflow-hidden rounded-xl border border-gray-200 shadow-xl">
+          <Image
+            src="/screenshots/dashboard.png"
+            alt="لوحة تحكم ROZ"
+            width={1440}
+            height={900}
+            className="w-full"
+            priority
+          />
+        </div>
+      </section>
+
       <section className="mx-auto max-w-5xl px-5 py-16">
         <h2 className="mb-8 text-center text-2xl font-bold text-roz-dark">شو فيه بالنظام</h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -50,6 +64,23 @@ export default function Home() {
       </section>
 
       <section className="bg-white px-5 py-16">
+        <div className="mx-auto max-w-5xl">
+          <h2 className="mb-8 text-center text-2xl font-bold text-roz-dark">لقطات من النظام</h2>
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-3">
+            <div className="h-72 overflow-hidden rounded-lg border border-gray-200 shadow-sm">
+              <Image src="/screenshots/employees.png" alt="قائمة الموظفين" width={1440} height={900} className="h-full w-full object-cover object-top" />
+            </div>
+            <div className="h-72 overflow-hidden rounded-lg border border-gray-200 shadow-sm">
+              <Image src="/screenshots/leave-approvals.png" alt="موافقات الإجازات" width={1440} height={900} className="h-full w-full object-cover object-top" />
+            </div>
+            <div className="h-72 overflow-hidden rounded-lg border border-gray-200 shadow-sm">
+              <Image src="/screenshots/portal-home.png" alt="بوابة الموظف" width={420} height={800} className="h-full w-full object-cover object-top" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-background px-5 py-16">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="mb-3 text-2xl font-bold text-roz-dark">جرّبه هلأ، بلا التزام</h2>
           <p className="mb-6 text-gray-600">
